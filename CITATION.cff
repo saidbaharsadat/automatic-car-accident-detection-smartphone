@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository in academic work, please cite the bachelor's thesis."
+title: "Automatic Car Accident Detection and Notification with Smartphone"
+type: software
+authors:
+  - family-names: "Sadat"
+    given-names: "Said Bahar"
+version: "1.0-archive"
+date-released: "2023-05-01"
+abstract: "Bachelor's thesis prototype combining an IoT accident-detection module, Firebase backend, and Xamarin.Forms mobile application."
