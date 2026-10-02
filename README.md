@@ -25,23 +25,6 @@ This repository documents the prototype developed for my bachelor's thesis, **Au
 
 ---
 
-## Table of Contents
-
-- [Project overview](#project-overview)
-- [Main capabilities](#main-capabilities)
-- [Visual overview](#visual-overview)
-- [System architecture](#system-architecture)
-- [Hardware used](#hardware-used)
-- [Software stack](#software-stack)
-- [Repository structure](#repository-structure)
-- [Event flow](#event-flow)
-- [Security note](#security-note)
-- [Limitations of the original prototype](#limitations-of-the-original-prototype)
-- [Thesis](#thesis)
-- [Author](#author)
-
----
-
 ## Project overview
 
 The prototype was designed around three connected parts:
@@ -61,36 +44,6 @@ The prototype was designed around three connected parts:
 - Support multiple user roles: Driver, Driver Relative, Traffic Police, Ambulance, and Fire Fighter.
 - Store user information and accident history using Firebase Cloud Firestore.
 - Store profile images using Firebase Cloud Storage.
-
----
-
-## Visual overview
-
-### 1) End-to-end system workflow
-
-This figure shows how the crash sensors, GPS, Arduino Uno, and NodeMCU ESP8266 interact with the backend and the Hadisa application.
-
-![Whole System Working Principles](assets/whole-system-working-principles.png)
-
-### 2) Hadisa application flow
-
-This diagram shows the main application navigation logic from login/registration to the home page, records, developer page, and profile page.
-
-![Hadisa Application Working Diagram](assets/hadisa-application-working-diagram.png)
-
-### 3) Mobile application interface examples
-
-**Login page**
-
-![Login Page](assets/login-page.png)
-
-**Home page states**
-
-![Home Page Screens](assets/home-page-screens.png)
-
-**Accident map and deployment view**
-
-![Accident Map Screens](assets/accident-map-screens.png)
 
 ---
 
@@ -139,7 +92,7 @@ A collision event contains fields such as date, time, latitude, longitude, detec
 ## Software stack
 
 - **Mobile:** Xamarin.Forms, XAML, C#/.NET
-- **Cloud:** Realtime Database, Cloud Firestore, Authentication, Cloud Storage
+- **Cloud:** Firebase Realtime Database, Cloud Firestore, Authentication, Cloud Storage
 - **Maps:** Google Maps / Xamarin.Forms Google Maps integration
 - **Firmware:** Arduino C/C++
 - **Data format:** JSON
@@ -155,18 +108,14 @@ A collision event contains fields such as date, time, latitude, longitude, detec
 ├── CITATION.cff
 ├── .gitignore
 ├── assets/
-│   ├── project-banner.jpg
-│   ├── whole-system-working-principles.png
-│   ├── hadisa-application-working-diagram.png
-│   ├── login-page.png
-│   ├── home-page-screens.png
-│   └── accident-map-screens.png
+│   └── project-banner.jpg
 ├── docs/
 │   ├── system-architecture.md
 │   ├── hardware.md
 │   ├── mobile-application.md
 │   ├── testing-and-results.md
-│   └── thesis-publication-note.md
+│   ├── thesis-publication-note.md
+│   └── repository-checklist.md
 ├── firmware/
 │   ├── nodemcu_esp8266/
 │   │   └── nodemcu_esp8266.ino
